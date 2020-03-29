@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
 const BAE = props => {
-  console.log("pros bae", props);
   return (
     <div className="p-3">
       <div className="gap-1 p-1 border rounded shadow container flex items-center justify-between bg-white">

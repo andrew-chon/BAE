@@ -3,7 +3,6 @@ import React from 'react';
 const UserLI = props => {
   let username = `${props.first} ${props.lname}`;
 
-
   return (
     <div>
       <input

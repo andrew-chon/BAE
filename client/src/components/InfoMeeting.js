@@ -104,8 +104,11 @@ function InfoMeeting(props) {
           </label>
           <ul key={props.agendavalueMap.id}>
             {props.agendavalueMap.map((item, index) => (
-              <AgendaItem agenda={item.newagenda} id={item.id}></AgendaItem>
-              // <li>{item.newagenda}</li>
+              <AgendaItem
+                key={index}
+                agenda={item.newagenda}
+                id={item.id}
+              ></AgendaItem>
             ))}
           </ul>
           <input

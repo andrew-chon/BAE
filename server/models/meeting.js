@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const backgroundSchema = new Schema({
@@ -25,15 +25,6 @@ const meetingNoteSchema = new Schema({
   note: { type: String }
 });
 
-// const atendeesSchema = new Schema({
-//   {
-//   firstName: { type: String },
-//   lastName: { type: String },
-//   jobTitle: { type: String }
-//   // userId: {type: String}
-//   }
-// });
-
 const meetingSchema = new Schema({
   name: {
     type: String,
@@ -54,6 +45,6 @@ const meetingSchema = new Schema({
   users: []
 });
 
-const Meeting = mongoose.model("Meeting", meetingSchema);
+const Meeting = mongoose.model('Meeting', meetingSchema);
 
 module.exports = Meeting;

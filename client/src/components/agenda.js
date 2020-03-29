@@ -1,22 +1,9 @@
-import React, { useState } from "react";
-// import AddTasks from "../components/addTasks";
-
-import "../pages/Meeting/Meeting";
-// import { PromiseProvider } from 'mongoose';
-import Dropdown from "./Dropdown";
+import React, { useState } from 'react';
+import '../pages/Meeting/Meeting';
+import Dropdown from './Dropdown';
 
 function Agenda(props) {
-  const [popup, setPopup] = useState("");
-  const [addtask, setAddtask] = useState("");
   const agendaId = props.agenda._id;
-
-  function addTaskShow() {}
-
-  function popupUser() {
-    console.log("working");
-
-    setPopup(true);
-  }
 
   return (
     <div className="p-5">
@@ -26,7 +13,7 @@ function Agenda(props) {
         </div>
 
         <div className="flex items-center justify-center w-10/12">
-          {" "}
+          {' '}
           {props.agenda.newagenda}
         </div>
 
@@ -66,7 +53,7 @@ function Agenda(props) {
                                 {attendee.firstName} {attendee.lastName}
                               </div>
                             ) : (
-                              <>{""}</>
+                              <>{''}</>
                             )}
                           </>
                         );

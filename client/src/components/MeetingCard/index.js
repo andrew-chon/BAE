@@ -20,14 +20,15 @@ function MeetingCard(props) {
             </div>
           </div>
           <div className="media-right">
-            <a className="button is-outlined is-success" href={`/meeting/${props.meetingID}`}>
+            <a
+              className="button is-outlined is-success"
+              href={`/meeting/${props.meetingID}`}
+            >
               Go to meeting
             </a>
           </div>
         </article>
       </div>
-
-      {/* <hr className="mx-10"></hr> */}
     </>
   );
 }
