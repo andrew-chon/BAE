@@ -12,9 +12,6 @@ const routes = require('./routes');
 const users = require('./routes/api/user');
 const PORT = process.env.PORT || 3001;
 
-//Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/meetingsdb');
-
 //Configuration
 
 app.use(session({ secret: 'cats' }));
@@ -23,7 +20,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static('public'));
 
-// Define middleware here
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -39,6 +35,8 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); // relative path
   });
 }
+//Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/meetingsdb');
 
 // Start the API server
 app.listen(process.env.PORT || PORT, function() {

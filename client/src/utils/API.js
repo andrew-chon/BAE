@@ -1,10 +1,8 @@
 import axios from 'axios';
 // const mongoose = require("mongoose");
 
-// const server = axios.create({ baseURL: 'http://localhost:3001/' });
-const PORT = process.env.PORT;
 const server = axios.create({
-  baseURL: `https://mern-stack-bae.herokuapp.com/${PORT}`
+  baseURL: process.env.baseURL || 'http://localhost:3001/'
 });
 
 export default {
