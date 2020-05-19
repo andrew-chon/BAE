@@ -4,6 +4,17 @@ BAE is a webapp used to prevent meetings that should've been an email. The host 
 
 It was using React, Node, Express, MongoDB
 
+## Screenshots
+Home Page:
+![](https://github.com/theandrewchon/BAE/blob/master/client/src/assets/img/home%20page.png)
+
+User Page:
+![](https://github.com/theandrewchon/BAE/blob/master/client/src/assets/img/User%20page.png)
+
+Meeting Page:
+![](https://github.com/theandrewchon/BAE/blob/master/client/src/assets/img/Meeting%20page.png)
+
+
 ## Starting the app locally
 Clone the directory and change into the root directory. Run the following command:
 
@@ -16,7 +27,7 @@ This should install node modules within the server and the client folder.
 After both installations complete, run the following command in your terminal:
 
 ```
-npm start
+npm run start
 ```
 
 Your app should now be running on <http://localhost:3000>. The Express server should intercept any API requests from the client.
