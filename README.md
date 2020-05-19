@@ -1,8 +1,26 @@
 # BAE
 
-Everyone has been in meetings that were uneccessary and shuold have been emails. Bae is a full MERN stack webapp that aims to streamline the process of planing meetings and determining if it should actually be an email.
+BAE is a webapp used to prevent meetings that should've been an email. The host sets the meeting beforehand, and the atendees up/downvote the agenda items they feel need to be discussed. If an items has negative votes, it switches to a BAE (Been An Email) item.
 
-BAE presents you with a dashboard where you can write a list of things planned on being talked about.  Atendees can up/downvote the individial topics and if all the topics get enough downvotes, it tells you the meeting should just be an email.
+It was using React, Node, Express, MongoDB
 
-We are utilizing Node.js, Express, React, and MongoDB in this app.
+## Starting the app locally
+Clone the directory and change into the root directory. Run the following command:
 
+```
+npm install
+```
+
+This should install node modules within the server and the client folder.
+
+After both installations complete, run the following command in your terminal:
+
+```
+npm start
+```
+
+Your app should now be running on <http://localhost:3000>. The Express server should intercept any API requests from the client.
+
+## Contributions and bugs
+
+Want to contribute? Submit a bull request. See a bug or have a suggestion? Open up an issue.
