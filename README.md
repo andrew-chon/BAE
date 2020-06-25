@@ -2,7 +2,7 @@
 
 BAE is a webapp used to prevent meetings that should've been an email. The host sets the meeting beforehand, and the atendees up/downvote the agenda items they feel need to be discussed. If an items has negative votes, it switches to a BAE (Been An Email) item.
 
-It was using React, Node, Express, MongoDB
+It uses React, Node, Express, MongoDB
 
 ## Screenshots
 Home Page:
